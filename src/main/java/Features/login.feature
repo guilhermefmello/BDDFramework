@@ -17,17 +17,17 @@
 ## (Comments)
 #Sample Feature Definition Template
 
-@tag
+#@tag
 Feature: saucedemo.com Login feature 
   #I want to use this template for my feature file
 
   @tag1
-  Scenario: Login saucedemo.com Test Scenario
+ Scenario: saucedemo.com Login Test Scenario
     Given user is on Login page
     When title of login page is swaglabs
     Then user enters username and password
     Then user clicks on login button
-    And user is on products page
+    Then user is on products page
 
   #@tag2
   #Scenario Outline: Title of your scenario outline

@@ -7,8 +7,10 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\Guilherme\\eclipse-workspace\\BDDFramework\\src\\main\\java\\Features",
-		glue= {"stepDefinitions"}
+		features = "C:\\Users\\Guilherme\\eclipse-workspace\\BDDFramework\\src\\main\\java\\Features\\login.feature",
+		glue= {"stepDefinitions"},
+		tags = "@tag1",
+		plugin = {"pretty", "html:target/cucumber-reports" }
 	
 		)
 

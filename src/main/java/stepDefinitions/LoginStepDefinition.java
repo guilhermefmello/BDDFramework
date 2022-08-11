@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -48,11 +47,16 @@ public class LoginStepDefinition {
 	}
 	
 	//User is on Products Page
-	@And ("^user is on products page$")
+	@Then ("^user is on products page$")
 	public void user_on_products_page() {
-		String productsPage = driver.getTitle();
+		String productsPage = driver.findElement(By.className("title")).getText();
 		System.out.println(productsPage);
-		Assert.assertEquals("Products", productsPage);
+		Assert.assertEquals("PRODUCTS", productsPage);
+		/*
+		 * String productsPage = driver.getTitle(); 
+		 * System.out.println(productsPage);
+		 * Assert.assertEquals("Products", productsPage);
+		 */
 	}
 	
 	
