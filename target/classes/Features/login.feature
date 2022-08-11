@@ -21,7 +21,7 @@
 Feature: saucedemo.com Login feature 
   #I want to use this template for my feature file
 
-  @tag1
+ @tag1
  Scenario: saucedemo.com Login Test Scenario
     Given user is on Login page
     When title of login page is swaglabs

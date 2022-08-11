@@ -9,6 +9,7 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
 		features = "C:\\Users\\Guilherme\\eclipse-workspace\\BDDFramework\\src\\main\\java\\Features\\login.feature",
 		glue= {"stepDefinitions"},
+		stepNotifications = true,
 		tags = "@tag1",
 		plugin = {"pretty", "html:target/cucumber-reports" }
 	
